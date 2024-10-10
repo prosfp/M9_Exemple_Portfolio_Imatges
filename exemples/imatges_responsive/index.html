@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exemples d'Imatges Responsives</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Exemple 1: Imatge amb max-width i height auto -->
+    <section>
+      <h2>Exemple 1: Imatge amb max-width i height: auto</h2>
+      <div class="image-container">
+        <img src="./img/pic1-1000_x_666.avif" alt="Imatge amb max-width" />
+      </div>
+    </section>
+
+    <!-- Exemple 2: Imatge de fons amb background-size cover -->
+    <section>
+      <h2>Exemple 2: Imatge de fons amb background-size: cover</h2>
+      <div class="background-image"></div>
+    </section>
+
+    <!-- Exemple 3: Imatge dins un contenidor amb object-fit: contain -->
+    <section>
+      <h2>Exemple 3: Imatge dins un contenidor amb object-fit: contain</h2>
+      <div class="image-container-fit">
+        <img
+          src="./img/pic1-1000_x_666.avif"
+          alt="Imatge amb object-fit: contain"
+        />
+      </div>
+    </section>
+
+    <!-- Exemple 4: Imatge responsiva amb <picture> i srcset -->
+    <section>
+      <h2>Exemple 4: Imatge responsiva amb &lt;picture&gt; i srcset</h2>
+      <picture>
+        <source
+          media="(max-width: 600px)"
+          srcset="./img/imatge-exemple1.avif"
+        />
+        <source
+          media="(min-width: 601px)"
+          srcset="./img/imatge-exemple2.avif"
+        />
+        <img
+          src="./img/imatge-exemple2.avif"
+          alt="Imatge amb srcset per resolucions"
+        />
+      </picture>
+    </section>
+
+    <!-- Exemple 5: Galeria d'imatges responsiva amb CSS Grid -->
+    <section>
+      <h2>Exemple 5: Galeria d'imatges responsiva amb CSS Grid</h2>
+      <div class="gallery">
+        <img src="./img/imatge-exemple1.avif" alt="Imatge 1" />
+        <img src="./img/imatge-exemple2.avif" alt="Imatge 2" />
+        <img src="./img/pic1-1000_x_666.avif" alt="Imatge 3" />
+        <img src="./img/pic2-1200_x_800.avif" alt="Imatge 4" />
+      </div>
+    </section>
+
+    <!-- Exemple 6: Galeria d'imatges responsiva amb CSS Grid -->
+    <section>
+      <h2>Exemple6: Galeria d'Imatges Responsiva amb Flexbox</h2>
+      <div class="flex-gallery">
+        <img class="pic1" src="./img/imatge-exemple1.avif" alt="Imatge 1" />
+        <img class="pic2" src="./img/imatge-exemple2.avif" alt="Imatge 2" />
+        <img src="./img/pic1-1000_x_666.avif" alt="Imatge 3" />
+        <img src="./img/pic2-1200_x_800.avif" alt="Imatge 4" />
+      </div>
+    </section>
+
+    <!-- Exemple 7: Capçalera amb imatge de fons fixa -->
+    <section>
+      <h2>Exemple 6: Capçalera amb imatge de fons fixa</h2>
+      <div class="hero-header"></div>
+    </section>
+  </body>
+</html>

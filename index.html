@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ca">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfoli Personal</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- Capçalera i Navegació -->
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#about">Sobre Mi</a></li>
+          <li><a href="#projects">Projectes</a></li>
+          <li><a href="#contact">Contacte</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Secció Sobre Mi -->
+    <section id="about">
+      <div class="profile">
+        <div class="profile-text">
+          <h1>Hola! Sóc B. Esponja</h1>
+          <p>
+            Sóc desenvolupador/a web i apassionat/da del disseny i la
+            programació. En aquest portfoli trobaràs alguns dels meus projectes
+            recents i més informació sobre com pots contactar amb mi.
+          </p>
+        </div>
+        <div class="profile-img">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="img/pngwing,com-300_x_227.png"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="img/pngwing,com-800_x_607.png"
+            />
+            <img src="img/pngwing,com-800_x_607.png" alt="Imatge de perfil" />
+          </picture>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secció Projectes -->
+    <section id="projects">
+      <h2>Projectes</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="img/pic1-300_x_200.avif"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="img/pic1-1000_x_666.avif"
+            />
+            <img src="img/pic1-1000_x_666.avif" alt="Imatge del projecte 1" />
+          </picture>
+          <h3>Projecte 1</h3>
+          <p>
+            Descripció breu del projecte 1, on he treballat en aspectes de
+            disseny responsiu i optimització de contingut.
+          </p>
+        </div>
+        <div class="project-card">
+          <picture>
+            <source
+              media="(max-width: 600px)"
+              srcset="img/pic2-300_x_200.avif"
+            />
+            <source
+              media="(min-width: 601px)"
+              srcset="img/pic2-1200_x_800.avif"
+            />
+            <img src="img/pic2-1200_x_800.avif" alt="Imatge del projecte 2" />
+          </picture>
+          <h3>Projecte 2</h3>
+          <p>
+            Descripció breu del projecte 2, destacant la creació d'una
+            experiència d'usuari intuïtiva i atractiva.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secció Contacte -->
+    <section id="contact">
+      <h2>Contacte</h2>
+      <p>
+        Pots contactar amb mi a través del correu electrònic:
+        <a href="mailto:example@example.com">example@example.com</a>
+      </p>
+    </section>
+
+    <!-- Peu de pàgina -->
+    <footer>
+      <p>&copy; 2024 - Portfoli de [El teu Nom]</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
